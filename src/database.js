@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const { NOTES_APP_MONGODB_URI } = process.env;
-const MONGODB_URI = `${NOTES_APP_MONGODB_URI}`;
+const MONGODB_URI = NOTES_APP_MONGODB_URI;
 
 mongoose
 	.connect(MONGODB_URI, {
